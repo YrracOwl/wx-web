@@ -1,0 +1,38 @@
+/* pages/page-liuyao/page-liuyao.wxss */
+/* pages/page-nav/page-nav.wxss */
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color:  #C73E3A;
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+.btn_circle{
+  position: relative;
+  width:120px;
+  height: 120px;
+  border: 2px solid #808080;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #3d3b4f;
+  box-shadow: 2rpx 2rpx 20rpx 3rpx;
+
+
+}
+
+.light-red{
+  background-color: #3d3b4f;
+  border: 2px solid #3d3b4f;
+  box-shadow: 0rpx 0rpx 0rpx 0rpx;
+}
+
+.cover{
+  position: relative;
+  justify-content: space-between;
+  font-size: 34px;
+  color: #fff;
+  font-family: "liuyao";
+}

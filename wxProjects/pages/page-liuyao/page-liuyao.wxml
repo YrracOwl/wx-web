@@ -1,0 +1,14 @@
+<!--pages/page-liuyao/page-liuyao.wxml-->
+<view class="container">
+  <view class="btn_circle" hover-class='light-red' bindtap='bindTapManual' hover-start-time="10" hover-stay-time='150'>
+    <view class="cover">已</view>
+    <view class="cover">有</view>
+    <view class="cover">卦</view>
+  </view>
+  
+  <view class="btn_circle" bindtap='bindTapAuto'  hover-class='light-red' hover-start-time="10" hover-stay-time='150'>
+    <view class="cover">想</view>
+    <view class="cover">求</view>
+    <view class="cover">卦</view>
+  </view>
+</view>

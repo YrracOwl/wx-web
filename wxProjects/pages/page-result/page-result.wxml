@@ -1,0 +1,114 @@
+<!--pages/page-result/page-result.wxml-->
+
+<!-- background -->
+<view class="bg-box">
+    <image class="bg-img" src="../../pages/images/cloud.jpg"></image>
+
+
+<view class="container">
+  <view class="title">
+    <view class="section__title" style='display: flex;'>本卦属性：{{benguaname}}</view>
+  </view>
+
+  <view class="container-row">
+    <view calss="section" style="display: block;">
+      <block wx:for="{{shiyinglist}}" wx:for-item="shiying">
+        <view class='inner'>{{shiying}}</view>
+      </block>
+    </view>
+
+    <view calss="section" style="display: block;">
+      <block wx:for="{{shapeuplist}}" wx:for-item="shapeup">
+        <view class='inner'>{{shapeup}}</view>
+      </block>
+      <block wx:for="{{shapedownlist}}" wx:for-item="shapedown">
+        <view class='inner'>{{shapedown}}</view>
+      </block>
+    </view>
+
+    <view calss="section" style="display: block;">
+      <block wx:for="{{liuqinlist}}" wx:for-item="liuqin">
+        <view class='inner'>{{liuqin}}</view>
+      </block>
+    </view>
+
+    <view calss="section" style="display: block;">
+      <block wx:for="{{dizhiuplist}}" wx:for-item="dizhiup">
+        <view class='inner'>{{dizhiup}}</view>
+      </block>
+      <block wx:for="{{dizhidownlist}}" wx:for-item="dizhidown">
+        <view class='inner'>{{dizhidown}}</view>
+      </block>
+    </view>
+
+    <view calss="section" style="display: block;">
+      <block wx:for="{{biangualist}}" wx:for-item="biangua">
+        <view class='inner' style='color: gold;'>{{biangua}}</view>
+      </block>
+    </view>
+
+    <view calss="section" style="display: block;">
+      <block wx:for="{{liushenlist}}" wx:for-item="liushen">
+        <view class='inner'>{{liushen}}</view>
+      </block>
+    </view>
+
+  </view>
+</view>
+
+<view class="container bottom">
+  <view class="title">
+    <view class="section__title" style='display: flex;'>卦宫日月：{{gongguaname}}</view>
+  </view>
+
+  <view class="container-row">
+  <view calss="section" style="display: block;">
+    <block wx:for="{{shapeupgonglist}}" wx:for-item="shapeupgong">
+      <view class='inner'>{{shapeupgong}}</view>
+    </block>
+    <block wx:for="{{shapedowngonglist}}" wx:for-item="shapedowngong">
+      <view class='inner'>{{shapedowngong}}</view>
+    </block>
+  </view>
+
+  <view calss="section" style="display: block;">
+    <block wx:for="{{fushenlist}}" wx:for-item="fushen">
+      <view class='inner'>{{fushen}}</view>
+    </block>
+  </view>
+
+  <view calss="section" style="display: block;">
+    <block wx:for="{{dizhiupgonglist}}" wx:for-item="dizhiupgong">
+      <view class='inner'>{{dizhiupgong}}</view>
+    </block>
+    <block wx:for="{{dizhidowngonglist}}" wx:for-item="dizhidowngong">
+      <view class='inner'>{{dizhidowngong}}</view>
+    </block>
+  </view>
+
+  <view calss="section" style="display: block;">
+    
+    <view class='inner'>月：</view>
+    <view class='inner' style='color: gold;'>{{emptyele}}{{month}}</view>
+    <view class='inner'>日：</view>
+    <view class='inner' style='color: gold;'>{{emptyele}}{{day}}</view>
+    <view class='inner'>{{emptyele}}</view>
+    <view class='inner'>{{emptyele}}</view>
+    
+  </view>
+
+  <view calss="section" style="display: block;">
+    
+    <view class='inner'>月建：{{yuejian}}</view>
+    <view class='inner'>月破：{{yuepo}}</view>
+    <view class='inner'>日建：{{rijian}}</view>
+    <view class='inner'>日破：{{ripo}}</view>
+    <view class='inner'>空亡1：{{kongwangri[0]}}</view>
+    <view class='inner'>空亡2：{{kongwangri[1]}}</view>
+    
+  </view>
+
+  </view>
+</view>
+
+</view>

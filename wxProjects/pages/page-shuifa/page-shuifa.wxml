@@ -1,0 +1,64 @@
+<!-- background -->
+<view class="bg-box">
+    <image class="bg-img" src="../../pages/images/darklotus.jpg"></image>
+
+
+    <view class="container  search">
+      <view class="section">
+        <view class="section__title">税收计算公式：</view>
+        <picker mode="multiSelector" bindchange="bindMultiPickerChange1" bindcolumnchange="bindMultiPickerColumnChange1" value="{{multiIndex1}}" range="{{multiArray1}}">
+          <view class="picker">
+            {{multiArray1[0][multiIndex1[0]]}}　→　{{multiArray1[1][multiIndex1[1]]}}
+          </view>
+        </picker>
+      </view>
+    </view>
+
+    <view class="container item2 look">
+      <view class="section">
+        <scroll-view scroll-y='true' style="height: 35vh;" class='scroll' white-space="">
+          <block wx:for="{{part1[part1num]}}" wx:for-item="i">
+            <view class="inner">{{i}}</view>
+          </block>
+        </scroll-view>
+      </view>
+    </view>
+
+    <view class="container item3 search">
+      <view class="section">
+        <view class="section__title">应纳税额公式：</view>
+        <picker mode="multiSelector" bindchange="bindMultiPickerChange2" bindcolumnchange="bindMultiPickerColumnChange2" value="{{multiIndex2}}" range="{{multiArray2}}">
+          <view class="picker">
+            {{multiArray2[0][multiIndex2[0]]}}　→　{{multiArray2[1][multiIndex2[1]]}}
+          </view>
+        </picker>
+      </view>
+    </view>
+    
+    <view class="container item4 look">
+      <view class="section">
+        <scroll-view scroll-y='true' style="height: 35vh;" class='scroll' >
+          <block wx:for="{{part2[part2num]}}" wx:for-item="j">
+            <view class="inner">{{j}}</view>
+          </block>
+        </scroll-view>
+      </view>
+
+    </view>
+
+<!-- hidden modal -->
+    <!--弹窗-->
+    <view class="modal-mask" catchtouchmove="preventTouchMove" wx:if="{{showhim}}"></view>
+    <view class="modal-dialog" wx:if="{{showhim}}">
+      <view class="modal-title">說</view>
+      <view class="modal-content">
+        <view class="modal-input">
+          <text>{{test[random]}}</text>
+        </view>
+      </view>
+      <view class="modal-footer">
+        <view class="btn-confirm" bindtap="onConfirm" hover-class='light-confirm'>追</view>
+      </view>
+    </view>
+
+</view>

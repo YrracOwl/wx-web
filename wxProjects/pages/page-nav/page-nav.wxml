@@ -1,0 +1,11 @@
+<view class="container">
+  <view class="btn_circle" hover-class='light-red' bindtap='bindTapLiuyao' hover-start-time="10" hover-stay-time='150'>
+    <view class="cover">六</view>
+    <view class="cover">爻</view>
+  </view>
+  
+  <view class="btn_circle" bindtap='bindTapShuifa'  hover-class='light-red' hover-start-time="10" hover-stay-time='150'>
+    <view class="cover">税</view>
+    <view class="cover">法</view>
+  </view>
+</view>

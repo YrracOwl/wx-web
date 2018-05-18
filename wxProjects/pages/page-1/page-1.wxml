@@ -1,0 +1,69 @@
+<!--page-1.wxml-->
+<!-- background -->
+
+<view class="bg-box">
+    <image class="bg-img" src="../../pages/images/cloud.jpg"></image>
+
+
+<view class='container'>
+  <view class="section">
+    <view class="section__title">起卦月份：{{month}}</view>
+    <input class='input' maxlength='2' bindinput='bindMonthInput' placeholder-style="color:#b0b0b0" placeholder='默认为当前夏历月' value="" ></input>
+        <view class="section__title">起卦日辰：{{day}}</view>
+    <input class='input' maxlength='2' bindinput='bindDayInput' placeholder-style="color:#b0b0b0" placeholder='默认为当前夏历日'></input>
+    <view class="section__title">输入卦象：</view>
+
+  </view>
+
+    <picker bindchange='bindPickerChangeSix' value='{{indexsix}}' range='{{array}}' disabled='{{disabled6}}'>
+      <view class="{{isChecked5?'even':'picker'}}">
+        第六次：{{array[indexsix]}}
+      </view>
+    </picker>
+    <picker bindchange='bindPickerChangeFive' value='{{indexfive}}' range='{{array}}' disabled='{{disabled5}}'>
+      <view class="{{isChecked4?'odd':'picker'}}">
+        第五次：{{array[indexfive]}}
+      </view>
+    </picker>
+    <picker bindchange='bindPickerChangeFour' value='{{indexfour}}' range='{{array}}' disabled='{{disabled4}}'>
+      <view class="{{isChecked3?'even':'picker'}}">
+        第四次：{{array[indexfour]}}
+      </view>
+    </picker>
+    <picker bindchange='bindPickerChangeThree' value='{{indexthree}}' range='{{array}}' disabled='{{disabled3}}'>
+      <view class="{{isChecked2?'odd':'picker'}}">
+        第三次：{{array[indexthree]}}
+      </view>
+    </picker>
+    <picker bindchange='bindPickerChangeTwo' value='{{indextwo}}' range='{{array}}' disabled='{{disabled2}}'>
+      <view class="{{isChecked1?'even':'picker'}}">
+        第二次：{{array[indextwo]}}
+      </view>
+    </picker>
+    <picker bindchange='bindPickerChangeOne' value='{{indexone}}' range='{{array}}' disabled="{{disabled1}}">
+      <view class='odd'>
+        第一次：{{array[indexone]}}
+      </view>
+    </picker>
+
+  <view class="section">
+    <button class='btn' hover-class='light-gray' bindtap='bindTapJump'>装卦</button>
+  </view>
+</view>
+
+<!-- hidden modal -->
+<!--弹窗-->
+<view class="modal-mask" catchtouchmove="preventTouchMove" wx:if="{{showhim}}"></view>
+<view class="modal-dialog" wx:if="{{showhim}}">
+  <view class="modal-title">說</view>
+  <view class="modal-content">
+    <view class="modal-input">
+      <text>{{test[random]}}</text>
+    </view>
+  </view>
+  <view class="modal-footer">
+    <view class="btn-confirm" bindtap="onConfirm" hover-class='light-confirm'>追</view>
+  </view>
+</view>
+
+</view>

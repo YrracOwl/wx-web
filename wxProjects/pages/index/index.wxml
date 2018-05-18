@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<view class="container" bindtap='bindViewTap'>
+    <view class="cover" >说</view>
+    <view class="cover" >余</view>
+    <view class="cover" >梦</view>
+</view>
+

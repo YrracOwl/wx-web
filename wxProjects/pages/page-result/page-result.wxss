@@ -1,0 +1,68 @@
+/* pages/page-result/page-result.wxss */
+page{
+  height: 100%;
+}
+
+.container{
+  display: flex;
+  height: 50%;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+
+.bottom{
+  top: 50%;
+}
+
+.container-row{
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+.section{
+}
+
+.section__title{
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    color: white;
+    font-family: "TangYiShanKaiW";
+    font-size: 20px;
+    background-color: rgba(255,255,255,0.15);
+}
+.inner{
+  color: white;
+  height: 2rem;
+  font-size: 16px;
+}
+
+/*
+大框架设置relative
+小框架设置absolute即可重叠
+page{
+  100%
+}
+也要加入才可以
+*/
+.bg-box{
+  height: 100%;
+  position: relative;
+  background-color: black;
+}
+
+.bg-img{
+  height: 100%;
+  width: 100%;
+  display: block;
+  float: left;
+  position: absolute;
+  filter: brightness(80%)
+}

@@ -1,0 +1,16 @@
+/**index.wxss**/
+.container{
+  height: 100%;
+  background-color: #C73E3A;
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 200rpx 0;
+}
+.cover{
+  display: flex;
+  color: white;
+  font-size: 80px;
+  font-family: "FZHuangCao";
+  justify-content: center;
+}

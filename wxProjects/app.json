@@ -1,0 +1,18 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/page-nav/page-nav",
+    "pages/page-result/page-result",
+    "pages/page-1/page-1",
+    "pages/page-shuifa/page-shuifa",
+    "pages/page-liuyao/page-liuyao",
+    "pages/page-2/page-2"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#C73E3A",
+    "navigationBarTitleText": "阴阳两界说余梦",
+    "navigationBarTextStyle":"white"
+  },
+  "debug":true
+}

@@ -1,0 +1,20 @@
+<!--pages/page-2/page-2.wxml-->
+<view class="bg-box">
+    <image class="bg-img" src="../../pages/images/cloud.jpg"></image>
+    <view class="container-column top">
+      <text class="title" space='emsp'>诚 心 求 卦</text>
+    </view>
+    <view class="container-column mid eventhem">
+      <view class="{{isChecked5?'inner':'wanna'}}">上爻：{{yaolist[index6]}}</view>
+      <view class="{{isChecked4?'inner':'wanna'}}">五爻：{{yaolist[index5]}}</view>
+      <view class="{{isChecked3?'inner':'wanna'}}">四爻：{{yaolist[index4]}}</view>
+      <view class="{{isChecked2?'inner':'wanna'}}">三爻：{{yaolist[index3]}}</view>
+      <view class="{{isChecked1?'inner':'wanna'}}">二爻：{{yaolist[index2]}}</view>
+      <view class="{{isChecked0?'inner':'wanna'}}">初爻：{{yaolist[index1]}}</view>
+
+    </view>
+    <view class="container-column bottom" >
+      <button class='btn' hover-class='light-gray' bindtap='bindTapAskDao' wx:if="{{isDoing}}" >摇卦：{{movelist[moving]}}</button>
+      <button class='btn' hover-class='light-gray' bindtap='bindTapJump' wx:if="{{isDone}}">装卦</button>
+    </view>
+</view>
